@@ -17,6 +17,7 @@ import { io } from 'socket.io-client';
 import DebugModal from '@src/modals/DebugModal';
 import { useCookies } from 'react-cookie';
 import isJson from '@src/utils/isJson';
+import HelpModal from '@src/modals/HelpModal';
 
 const socket = io(process.env.NEXT_PUBLIC_SOCKET_URI as string);
 
@@ -317,7 +318,12 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.h1}> metrix.place </h1>
         <h4 className={styles.h4}>
-          A communal graffiti board built on Metrix.
+          A communal graffiti board built on Metrix.                    
+                  <HelpModal
+                    trigger={
+                        <Icon className={styles.eye_icon} name="help circle" />
+                    }
+                  />
         </h4>
 
         {network === (process.env.NEXT_PUBLIC_APP_NETWORK as NetworkType) &&

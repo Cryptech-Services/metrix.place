@@ -189,3 +189,44 @@ body {
     margin-right: .5rem;
   }
 }
+
+.text-modal-help {
+  font-size: 1.5rem;
+}
+
+.to-center {
+  text-align: center;
+}
+
+.to-space-bot {
+  margin-bottom: 1rem;
+}
+
+.to-button{
+  font-size: 1.5rem;
+  display: flex;
+  background-color: rgb(76, 69, 92);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  margin-right: .5rem;
+  color: aliceblue !important;
+}
+
+.to-button:hover {
+  transform: translateY(-2px);
+  background-color: rgb(100, 89, 124);
+}
+
+.to-button:active {
+  background-color: rgb(117, 103, 147);
+  color: #00000075;
+  transform: translateY(0px);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: left;
+}

@@ -60,9 +60,5 @@
     {
       "path": "./server_worker"
     }
-  ],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  }
+  ]
 }
